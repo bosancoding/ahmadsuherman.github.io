@@ -1708,7 +1708,7 @@ button,
       -moz-align-items: -moz-flex-start;
       -webkit-align-items: -webkit-flex-start;
       -ms-align-items: -ms-flex-start;
-      align-items: flex-start; }
+      align-items: center; }
       .features article .icon {
         height: 6em;
         line-height: 6em;
