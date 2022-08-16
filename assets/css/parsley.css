@@ -1,0 +1,50 @@
+input.is-valid,
+select.is-valid,
+textarea.is-valid {
+  border: 1px solid #228B22;
+  background-image: url("images/parsley/icon-success.png");
+  background-repeat:no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+  border: 1px solid #F44336;
+  background-image:url("images/parsley/icon-failed.png");
+  background-repeat:no-repeat;
+  background-position: center right calc(.375em + .1875rem);
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.is-invalid:focus {
+    border-color: #F44336;
+    box-shadow: none;
+}
+
+.is-valid:focus {
+    border-color: #228B22;
+    box-shadow: none;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+.parsley-type, .parsley-required, .parsley-equalto, .parsley-length, .parsley-pattern{
+  color:#ff0000;
+}
